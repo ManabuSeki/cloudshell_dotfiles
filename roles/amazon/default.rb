@@ -1,0 +1,10 @@
+include_role 'base'
+
+include_cookbook 'gh'
+include_cookbook 'ghq'
+include_cookbook 'git'
+include_cookbook 'peco'
+include_cookbook 'ecspresso'
+include_cookbook 'zsh'
+include_cookbook 'tmux'
+include_cookbook 'rain'
