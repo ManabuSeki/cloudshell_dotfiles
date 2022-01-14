@@ -41,3 +41,5 @@ if [ -f ~/.zshrc.`uname` ]; then source ~/.zshrc.`uname`; fi
 if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
 
 source $HOME/.zsh/lib/peco.zsh
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
