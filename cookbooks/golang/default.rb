@@ -10,8 +10,8 @@ execute 'install golang' do
   trap 'rm -rf "$TMPDIR"' EXIT
   cd "$TMPDIR" || exit
   wget https://go.dev/dl/go#{version}.linux-amd64.tar.gz
-  tar -C #{ENV['HOME']} -xzf go#{version}.linux-amd64.tar.gz
+  tar -C /usr/local -xzf go#{version}.linux-amd64.tar.gz
   chown #{node[:user]}:#{node[:user]} -R #{ENV['HOME']}/go
   EOC
-  not_if  "test -d #{ENV['HOME']}/go/bin"
+  not_if  "test -d /usr/local/go/bin"
 end
