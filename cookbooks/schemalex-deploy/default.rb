@@ -1,4 +1,4 @@
-version = "0.0.8"
+version = "0.0.9"
 github_binary 'schemalex-deploy' do
     repository 'shogo82148/schemalex-deploy'
     version "v#{version}"
