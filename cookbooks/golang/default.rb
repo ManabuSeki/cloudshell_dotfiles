@@ -4,7 +4,7 @@ directory "#{ENV['HOME']}/go" do
 end
 
 execute 'install golang' do
-  version = "1.19.1"
+  version = "1.20.6"
   command <<-EOC
   TMPDIR=$(mktemp -d)
   trap 'rm -rf "$TMPDIR"' EXIT
